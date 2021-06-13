@@ -1,0 +1,298 @@
+{
+    "outerwear": [
+        "gray blazer ", 
+        "black blazer ", 
+        "trenchcoat ", 
+        "white blazer "
+    ], 
+    "tops_bottoms": [
+        [
+            "short black skirt ", 
+            "white tee"
+        ], 
+        [
+            "black jean shorts ", 
+            "black tee"
+        ], 
+        [
+            "white jean shorts ", 
+            "white tank "
+        ], 
+        [
+            "blue jeans", 
+            "black tank "
+        ], 
+        [
+            "white jeans", 
+            "beige top "
+        ], 
+        [
+            "black jeans", 
+            "white button down "
+        ], 
+        [
+            "black trousers ", 
+            "black button down "
+        ], 
+        [
+            "beige trousers", 
+            "blue button down "
+        ], 
+        [
+            "white trousers", 
+            "blue button down "
+        ], 
+        [
+            "beige trousers", 
+            "black button down "
+        ], 
+        [
+            "black trousers ", 
+            "blue button down "
+        ], 
+        [
+            "white trousers", 
+            "black button down "
+        ], 
+        [
+            "black trousers ", 
+            "white button down "
+        ], 
+        [
+            "black jeans", 
+            "black button down "
+        ], 
+        [
+            "black jeans", 
+            "blue button down "
+        ], 
+        [
+            "beige trousers", 
+            "white button down "
+        ], 
+        [
+            "white trousers", 
+            "white button down "
+        ], 
+        [
+            "black jeans", 
+            "beige top "
+        ], 
+        [
+            "white jeans", 
+            "white button down "
+        ], 
+        [
+            "white jeans", 
+            "black button down "
+        ], 
+        [
+            "white jeans", 
+            "blue button down "
+        ], 
+        [
+            "black trousers ", 
+            "beige top "
+        ], 
+        [
+            "beige trousers", 
+            "beige top "
+        ], 
+        [
+            "white trousers", 
+            "beige top "
+        ], 
+        [
+            "white jeans", 
+            "black tank "
+        ], 
+        [
+            "blue jeans", 
+            "beige top "
+        ], 
+        [
+            "blue jeans", 
+            "white button down "
+        ], 
+        [
+            "blue jeans", 
+            "black button down "
+        ], 
+        [
+            "blue jeans", 
+            "blue button down "
+        ], 
+        [
+            "black jeans", 
+            "black tank "
+        ], 
+        [
+            "black trousers ", 
+            "black tank "
+        ], 
+        [
+            "beige trousers", 
+            "black tank "
+        ], 
+        [
+            "white trousers", 
+            "black tank "
+        ], 
+        [
+            "blue jeans", 
+            "white tank "
+        ], 
+        [
+            "white jean shorts ", 
+            "black tank "
+        ], 
+        [
+            "white jean shorts ", 
+            "beige top "
+        ], 
+        [
+            "white jean shorts ", 
+            "white button down "
+        ], 
+        [
+            "white jean shorts ", 
+            "black button down "
+        ], 
+        [
+            "white jean shorts ", 
+            "blue button down "
+        ], 
+        [
+            "white jeans", 
+            "white tank "
+        ], 
+        [
+            "black jeans", 
+            "white tank "
+        ], 
+        [
+            "black trousers ", 
+            "white tank "
+        ], 
+        [
+            "beige trousers", 
+            "white tank "
+        ], 
+        [
+            "white trousers", 
+            "white tank "
+        ], 
+        [
+            "white jean shorts ", 
+            "black tee"
+        ], 
+        [
+            "black jean shorts ", 
+            "white tank "
+        ], 
+        [
+            "black jean shorts ", 
+            "black tank "
+        ], 
+        [
+            "black jean shorts ", 
+            "beige top "
+        ], 
+        [
+            "black jean shorts ", 
+            "white button down "
+        ], 
+        [
+            "black jean shorts ", 
+            "black button down "
+        ], 
+        [
+            "black jean shorts ", 
+            "blue button down "
+        ], 
+        [
+            "blue jeans", 
+            "black tee"
+        ], 
+        [
+            "white jeans", 
+            "black tee"
+        ], 
+        [
+            "black jeans", 
+            "black tee"
+        ], 
+        [
+            "black trousers ", 
+            "black tee"
+        ], 
+        [
+            "beige trousers", 
+            "black tee"
+        ], 
+        [
+            "white trousers", 
+            "black tee"
+        ], 
+        [
+            "black jean shorts ", 
+            "white tee"
+        ], 
+        [
+            "short black skirt ", 
+            "black tee"
+        ], 
+        [
+            "short black skirt ", 
+            "white tank "
+        ], 
+        [
+            "short black skirt ", 
+            "black tank "
+        ], 
+        [
+            "short black skirt ", 
+            "beige top "
+        ], 
+        [
+            "short black skirt ", 
+            "white button down "
+        ], 
+        [
+            "short black skirt ", 
+            "black button down "
+        ], 
+        [
+            "short black skirt ", 
+            "blue button down "
+        ], 
+        [
+            "white jean shorts ", 
+            "white tee"
+        ], 
+        [
+            "blue jeans", 
+            "white tee"
+        ], 
+        [
+            "white jeans", 
+            "white tee"
+        ], 
+        [
+            "black jeans", 
+            "white tee"
+        ], 
+        [
+            "black trousers ", 
+            "white tee"
+        ], 
+        [
+            "beige trousers", 
+            "white tee"
+        ], 
+        [
+            "white trousers", 
+            "white tee"
+        ]
+    ]
+}
