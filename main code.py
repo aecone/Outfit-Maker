@@ -92,6 +92,7 @@ def organize_clothing_file(tops, bottoms, outerwears):
     tops_bottoms_dict = {}
     outer_dict = {}
     combo_list = make_combinations(tops, bottoms)
+    random.shuffle(combo_list)
     random.shuffle(outerwears)
     tops_bottoms_dict["tops_bottoms"] = combo_list
     outer_dict["outerwear"] = outerwears
