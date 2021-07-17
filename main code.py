@@ -86,8 +86,8 @@ def get_outerwear():
     return outer_list
 
 
-# Needed to randomize and make all possible combinations for tops + bottoms. Made dict for tops & outerwear and combined
-# it, so you can access it easier to displaying the info separately.
+# Needed to randomize and make all possible combinations for tops + bottoms. Made dict for tops & bottoms and another
+# for outerwear and combined it, so you can access it easier to displaying the info separately in the file.
 def organize_clothing_file(tops, bottoms, outerwears):
     tops_bottoms_dict = {}
     outer_dict = {}
