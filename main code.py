@@ -12,18 +12,18 @@ week's outfits they want. I used json files to store the info so it can be reuse
 # wants, which would be to input their clothing data if they are new or if they want their weekly outfits made (only
 # for those who already input their data).
 def main():
-    acceptable_responses = ["YES", " YES", "YES ", "yes", " yes", "yes ", "NO", " NO", "NO ", "no", " no", "no "]
+    acceptable_responses = ["YES", " YES", "YES ", "NO", " NO", "NO "]
     user_answer = raw_input(
         "\nWelcome! This is your BASIC spring/summer outfit maker that will create weekly clothing looks for a "
-        "duration of one month. \n \nDo you already have a saved closet here? YES or NO: ")
+        "duration of one month. \n \nDo you already have a saved closet here? YES or NO: ").upper()
     while user_answer not in acceptable_responses:
-        user_answer = raw_input("Only YES or NO answers. Try again: ")
+        user_answer = raw_input("Only YES or NO answers. Try again: ").upper()
     make_closet_or_get_outfits(user_answer)
 
 
 def make_closet_or_get_outfits(user_answer):
-    no = ["NO", " NO", "NO ", "no", " no", "no "]
-    yes = ["YES", " YES", "YES ", "yes", " yes", "yes "]
+    no = ["NO", " NO", "NO "]
+    yes = ["YES", " YES", "YES "]
     if user_answer in no:
         get_closet()
     if user_answer in yes:
@@ -87,7 +87,7 @@ def get_outerwear():
 
 
 # Needed to randomize and make all possible combinations for tops + bottoms. Made dict for tops & bottoms and another
-# for outerwear and combined it, so you can access it easier to displaying the info separately in the file.
+# for outerwear and combined it, so you can access it easier when displaying the info separately in the file.
 def organize_clothing_file(tops, bottoms, outerwears):
     tops_bottoms_dict = {}
     outer_dict = {}
@@ -146,20 +146,20 @@ def set_list_length(combo_list):
 
 # After file is made, user should be able to get outfits (optional)
 def make_json(ult_list):
-    acceptable_responses = ["YES", " YES", "YES ", "yes", " yes", "yes ", "NO", " NO", "NO ", "no", " no", "no "]
-    name = raw_input("Name your closet (please remember for future reference): ")
+    acceptable_responses = ["YES", " YES", "YES ", "NO", " NO", "NO "]
+    name = raw_input("Name your closet (please remember for future reference): ").upper()
     closet_file = name + ":"
     with open("{}:".format(name), 'w') as f:
         json.dump(ult_list, f, indent=4)
-    user_answer = raw_input("\nDo you want this week's outfits created now? YES or NO: ")
+    user_answer = raw_input("\nDo you want this week's outfits created now? YES or NO: ").upper()
     while user_answer not in acceptable_responses:
-        user_answer = raw_input("Only YES or NO answers. Try again: ")
+        user_answer = raw_input("Only YES or NO answers. Try again: ").upper()
     stop_or_get_outfits(closet_file, user_answer)
 
 
 def stop_or_get_outfits(closet_file, user_answer):
-    no = ["NO", " NO", "NO ", "no", " no", "no "]
-    yes = ["YES", " YES", "YES ", "yes", " yes", "yes "]
+    no = ["NO", " NO", "NO "]
+    yes = ["YES", " YES", "YES "]
     if user_answer in no:
         print("\nSee you next time! :)")
         exit()
