@@ -13,11 +13,11 @@ week's outfits they want. I used json files to store the info so it can be reuse
 # for those who already input their data).
 def main():
     acceptable_responses = ["YES", " YES", "YES ", "NO", " NO", "NO "]
-    user_answer = raw_input(
+    user_answer = input(
         "\nWelcome! This is your BASIC spring/summer outfit maker that will create weekly clothing looks for a "
         "duration of one month. \n \nDo you already have a saved closet here? YES or NO: ").upper()
     while user_answer not in acceptable_responses:
-        user_answer = raw_input("Only YES or NO answers. Try again: ").upper()
+        user_answer = input("Only YES or NO answers. Try again: ").upper()
     make_closet_or_get_outfits(user_answer)
 
 
@@ -27,7 +27,7 @@ def make_closet_or_get_outfits(user_answer):
     if user_answer in no:
         get_closet()
     if user_answer in yes:
-        name = raw_input(" \nWhat is the EXACT name of the closet you made: ")
+        name = input(" \nWhat is the EXACT name of the closet you made: ")
         full_file_name = name + ":"
         valid_file_verification(full_file_name)
 
@@ -46,7 +46,8 @@ def get_closet():
           '\n \nPlease be ready to categorize all your clothes with these titles: \n - Short Sleeves Tops '
           '(Tees, Tanks, etc)\n - Long Sleeve Tops (Blouses, Button Downs, Sweaters, etc) '
           '\n - Short Bottoms (Shorts, Skirts, etc) \n - Long Bottoms (Jeans, Trousers, etc) '
-          '\n - Outerwear (Jackets, Blazers, Cardigans, Hoodies, Coats) \n \nPress ENTER to move to next category'
+          '\n - Outerwear (Jackets, Blazers, Cardigans, Hoodies, Coats) \n \nInput each clothing item one at a time by'
+          ' pressing ENTER afterwards. Press ENTER again to move to next clothing category'
           '\n \nYOUR CLOSET:')
     tops = get_grouped_clothing(clothing_categories[0], clothing_categories[1])
     bottoms = get_grouped_clothing(clothing_categories[2], clothing_categories[3])
@@ -57,13 +58,13 @@ def get_closet():
 def get_grouped_clothing(clothing1, clothing2):
     grouped_clothes = []
     while True:
-        input1 = raw_input("{}: ".format(clothing1))
+        input1 = input("{}: ".format(clothing1))
         if input1 == "":
             break
         grouped_clothes.append(input1)
     print("")
     while True:
-        input2 = raw_input("{}: ".format(clothing2))
+        input2 = input("{}: ".format(clothing2))
         if input2 == "":
             break
         grouped_clothes.append(input2)
@@ -74,13 +75,13 @@ def get_grouped_clothing(clothing1, clothing2):
 def get_outerwear():
     outer_list = []
     while True:
-        outerwear = raw_input("Outerwears (at least 2): ")
+        outerwear = input("Outerwears (at least 2): ")
         if outerwear == "":
             break
         outer_list.append(outerwear)
     while len(outer_list) < 2:
         if outerwear == "":
-            outerwear = raw_input("Please add at least one more outerwear: ")
+            outerwear = input("Please add at least one more outerwear: ")
             outer_list.append(outerwear)
     print ("Your Outerwear closet is: \n" + str(outer_list))
     return outer_list
@@ -147,13 +148,13 @@ def set_list_length(combo_list):
 # After file is made, user should be able to get outfits (optional)
 def make_json(ult_list):
     acceptable_responses = ["YES", " YES", "YES ", "NO", " NO", "NO "]
-    name = raw_input("Name your closet (please remember for future reference): ").upper()
+    name = input("Name your closet (please remember for future reference): ").upper()
     closet_file = name + ":"
     with open("{}:".format(name), 'w') as f:
         json.dump(ult_list, f, indent=4)
-    user_answer = raw_input("\nDo you want this week's outfits created now? YES or NO: ").upper()
+    user_answer = input("\nDo you want this week's outfits created now? YES or NO: ").upper()
     while user_answer not in acceptable_responses:
-        user_answer = raw_input("Only YES or NO answers. Try again: ").upper()
+        user_answer = input("Only YES or NO answers. Try again: ").upper()
     stop_or_get_outfits(closet_file, user_answer)
 
 
@@ -169,18 +170,18 @@ def stop_or_get_outfits(closet_file, user_answer):
 
 def valid_file_verification(closet_file):
     while str(path.isfile(closet_file)) == "False":
-        name = raw_input("No file was found. Retype the file name: ")
+        name = input("No file was found. Retype the file name: ")
         closet_file = name + ":"
     open_json_and_ask_week_num(closet_file)
 
 
 def open_json_and_ask_week_num(closet_file):
     week_numbers = ["1", "2", "3", "4", "5"]
-    week = raw_input("\n" + "What week are you in? 1-5 only: ")
+    week = input("\n" + "What week are you in? 1-5 only: ")
     with open(closet_file) as f:
         opened_file = json.load(f)
     while week not in week_numbers:
-        week = raw_input("You can only write numbers 1-5. Please try again:")
+        week = input("You can only write numbers 1-5. Please try again:")
     display_outfits(opened_file, week)
 
 
